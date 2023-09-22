@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Intro from "./components/Intro";
+import Profile from "./components/Profile";
 import Main from "./components/Main";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <Main>
-        <Intro />
+        <Profile />
       </Main>
     </>
   );

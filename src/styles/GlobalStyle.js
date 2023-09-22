@@ -10,6 +10,7 @@ const GlobalStyle = styled.createGlobalStyle`
   :root {
     --white: #fff;
     --black: #000;
+    --lightGray: #e0e0e0;
     --gray: #acb1b7;
     --mainColor: #34bfe9;
   }
@@ -17,6 +18,15 @@ const GlobalStyle = styled.createGlobalStyle`
   body {
     font-family: "SUIT";
     color: var(--black);
+  }
+
+  a {
+    color: var(--mainColor);
+    font-weight: bold;
+
+    &:hover {
+      filter: brightness(1.03);
+    }
   }
 `;
 
