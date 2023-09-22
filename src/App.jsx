@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Intro from "./components/Intro";
 import Main from "./components/Main";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <Header />
       <Main>
-        <h1>Hello, Vite</h1>
+        <Intro />
       </Main>
     </>
   );
