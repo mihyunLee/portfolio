@@ -6,7 +6,7 @@ export default function Header() {
     <StyledHeader>
       <div>
         <h1>
-          {simpleInfo.name} {simpleInfo.position}
+          {simpleInfo.name} {simpleInfo.job}
         </h1>
       </div>
     </StyledHeader>
