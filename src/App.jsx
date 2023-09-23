@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Main from "./components/Main";
 import Project from "./components/Project";
+import Skill from "./components/Skill";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Main>
         <Profile />
         <Project />
+        <Skill />
       </Main>
     </>
   );
