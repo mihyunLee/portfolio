@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { simpleInfo } from "../data/profile";
+import { simpleInfo } from "../../data/profile";
 
 export default function Header() {
   return (
