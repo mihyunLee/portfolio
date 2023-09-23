@@ -19,18 +19,18 @@ export default function ProjectItem(props) {
   } = project;
 
   return (
-    <ProjectItemWrapper>
+    <ItemWrapper>
       <h3>{title}</h3>
       <span>{team}</span>
       <Part>
         <span>💡 Introduce</span>
         <p>{intro}</p>
       </Part>
-      <ProjectDate>
+      <Date>
         <span>
           {startDate} ~ {endDate || <strong>진행 중</strong>}
         </span>
-      </ProjectDate>
+      </Date>
       <Part>
         <span>🚩 Role</span>
         <p>{role}</p>
@@ -58,11 +58,11 @@ export default function ProjectItem(props) {
           {github}
         </a>
       </Link>
-    </ProjectItemWrapper>
+    </ItemWrapper>
   );
 }
 
-const ProjectItemWrapper = styled.div`
+export const ItemWrapper = styled.div`
   position: relative;
 `;
 
@@ -84,7 +84,7 @@ const Content = styled(Part)`
   padding-left: 16px;
 `;
 
-const ProjectDate = styled.time`
+export const Date = styled.time`
   position: absolute;
   top: 0;
   right: 0;
