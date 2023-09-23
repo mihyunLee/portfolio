@@ -17,13 +17,15 @@ export default function Project() {
   return (
     <Layout $headerIcon="🧑🏻‍💻">
       <h2>프로젝트</h2>
-      <ol>
-        {projects.map((project, idx) => (
-          <li key={idx}>
-            <ProjectItem {...project} />
-          </li>
-        ))}
-      </ol>
+      <div className="content">
+        <ol>
+          {projects.map((project, idx) => (
+            <li key={idx}>
+              <ProjectItem {...project} />
+            </li>
+          ))}
+        </ol>
+      </div>
     </Layout>
   );
 }

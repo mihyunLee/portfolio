@@ -25,19 +25,20 @@ const LayoutSection = styled.section`
     }
   }
 
-  ol {
+  .content {
     width: calc(100% - 220px);
     padding-left: 220px;
 
+    ol > li:not(:last-child) {
+      border-bottom: 1px solid var(--lightGray);
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+
     @media (max-width: 768px) {
+      width: 100%;
       padding-left: 0;
     }
-  }
-
-  ol > li:not(:last-child) {
-    border-bottom: 1px solid var(--lightGray);
-    margin-bottom: 32px;
-    padding-bottom: 32px;
   }
 
   h3 {
