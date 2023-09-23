@@ -36,7 +36,10 @@ export default function Profile() {
         <Intro />
       </IntroBox>
       <GithubGraph>
-        <img src="https://ghchart.rshah.org/mihyunLee" />
+        <img
+          src="https://ghchart.rshah.org/mihyunLee"
+          alt="github 커밋 그래프"
+        />
       </GithubGraph>
     </StyledSection>
   );
@@ -130,6 +133,7 @@ const IntroBox = styled.div`
 const GithubGraph = styled.div`
   width: calc(100% - 120px);
   margin: 0 auto;
+  padding-bottom: 60px;
 
   img {
     width: 100%;
