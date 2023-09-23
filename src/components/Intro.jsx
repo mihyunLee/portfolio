@@ -1,8 +1,6 @@
 import useData from "../hooks/useData";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
 import Spinner from "./common/Spinner";
+import Markdown from "./common/Markdown";
 import styled from "styled-components";
 
 export default function Intro() {
@@ -16,9 +14,7 @@ export default function Intro() {
 
   return (
     <IntroContainer>
-      <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
-        {intro}
-      </ReactMarkdown>
+      <Markdown>{intro}</Markdown>
     </IntroContainer>
   );
 }
