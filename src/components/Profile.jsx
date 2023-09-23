@@ -121,7 +121,6 @@ const Contact = styled.div`
 
     svg {
       margin-right: 8px;
-      vertical-align: middle;
     }
   }
 `;

@@ -4,7 +4,10 @@ import remarkBreaks from "remark-breaks";
 
 export default function Markdown({ children }) {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
+    <ReactMarkdown
+      linkTarget="_blank"
+      remarkPlugins={[remarkGfm, remarkBreaks]}
+    >
       {children}
     </ReactMarkdown>
   );

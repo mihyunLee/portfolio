@@ -28,6 +28,10 @@ const GlobalStyle = styled.createGlobalStyle`
       filter: brightness(1.03);
     }
   }
+
+  svg {
+    vertical-align: middle;
+  }
 `;
 
 export default GlobalStyle;
