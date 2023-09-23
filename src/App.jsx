@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Main from "./components/Main";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Main>
         <Profile />
+        <Project />
       </Main>
     </>
   );
