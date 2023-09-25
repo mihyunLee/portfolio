@@ -22,7 +22,7 @@ class DataController {
 
       const data = await response.json();
 
-      return data;
+      return data.reverse();
     } catch (error) {
       console.error("파일 가져오기 실패:", error);
     }
