@@ -1,5 +1,5 @@
 import useData from "../hooks/useData";
-import EducationItem from "./EducationItem";
+import ContentItem from "./common/ContentItem";
 import Layout from "./common/Layout";
 import Spinner from "./common/Spinner";
 
@@ -21,7 +21,7 @@ export default function Education() {
         <ol>
           {educations.map((education, idx) => (
             <li key={idx}>
-              <EducationItem {...education} />
+              <ContentItem {...education} />
             </li>
           ))}
         </ol>
