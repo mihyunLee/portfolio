@@ -14,6 +14,16 @@ function App() {
         <Project />
         <Skill />
         <Content folderName="education" header="학력" headerIcon="🎓" />
+        <Content
+          folderName="experience"
+          header="수상 및 활동"
+          headerIcon="🏆"
+        />
+        <Content
+          folderName="certificate"
+          header="수료 및 자격증"
+          headerIcon="📜"
+        />
       </Main>
     </>
   );
