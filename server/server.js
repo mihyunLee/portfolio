@@ -10,7 +10,7 @@ const httpServer = http.createServer(app);
 const currentModuleDir = path
   .dirname(new URL(import.meta.url).pathname)
   .slice(3); // esmodule 에서는 __dirname 사용 불가
-const dirPath = path.join(currentModuleDir, "data");
+const dirPath = path.join(currentModuleDir, "../src/data");
 
 // CORS 이슈 해결
 app.use(express.json());
@@ -20,6 +20,11 @@ app.use(cors());
 app.use(express.static(dirPath));
 
 // get 요청
+/**
+ * @path {GET} http://BASE_URL/api/files?name='폴더명'
+ * @description Query Params 요청 데이터 값이 있고 반환 값이 있는 GET Method
+ * @params name - 폴더명
+ */
 app.get("/api/files", async (req, res) => {
   const dirname = req.query.name;
   const mdFileList = [];
