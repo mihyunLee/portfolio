@@ -41,6 +41,29 @@ const LayoutSection = styled.section`
     }
   }
 
+  .grid {
+    width: calc(100% - 220px);
+    padding-left: 220px;
+
+    ol {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+
+      li {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 9px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
   h3 {
     font-size: 18px;
     font-weight: bold;

@@ -7,6 +7,7 @@ endDate>
 skills> React, Recoil, React-Query, Axios, React Router, Styled Components, Three.js
 site> https://bangkkuseok.netlify.app/
 github> https://github.com/FRONTENDSCHOOL5/final-14-BangKKuseok
+image> https://user-images.githubusercontent.com/51310674/270269482-41dafe0e-060b-4248-9d99-d1b401331ebe.png
 
 ```
 - 월 [총 22회의 회의](https://www.notion.so/0e9163f19b8f4c848e91835ef21feb18?pvs=21)를 주도하고 기록하여 프로젝트 일정을 계획하고 회의를 통해 프로젝트 오류를 함께 나누는 문화를 조성하여 팀워크 향상

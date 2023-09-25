@@ -7,6 +7,7 @@ endDate> 2023.06
 skills> React, React Router, Lottie
 site> http://bibimbap-lotto.netlify.app/
 github> https://github.com/mihyunLee/react-lotto
+image> https://user-images.githubusercontent.com/51310674/270269745-32d5b25e-0f36-4e4a-91e9-e6192eff49e0.png
 
 ```
 - 리액트를 처음 접하는 팀원들의 사기를 증진하기 위해 매주 1회 정기적 회의 주도
