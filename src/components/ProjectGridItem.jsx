@@ -2,8 +2,8 @@ import styled from "styled-components";
 import markdownToObject from "../utils/markdownToObject";
 import { ItemWrapper } from "./common/ContentItem";
 
-export default function ProjectGridItem(props) {
-  const project = markdownToObject(props.data);
+export default function ProjectGridItem({ item }) {
+  const project = markdownToObject(item);
   const { title, intro, site, image } = project;
 
   return (

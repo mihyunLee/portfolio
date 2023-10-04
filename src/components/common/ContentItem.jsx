@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Markdown from "./Markdown";
 import { FaLink } from "react-icons/fa6";
 
-export default function ContentItem(props) {
-  const contents = markdownToObject(props.data);
+export default function ContentItem({ item }) {
+  const contents = markdownToObject(item);
   const { title, detail, date, content = "", link = "" } = contents;
 
   return (

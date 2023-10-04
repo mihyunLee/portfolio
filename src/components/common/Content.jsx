@@ -21,7 +21,7 @@ export default function Content({ folderName, header, headerIcon }) {
         <ol>
           {file.map((item, idx) => (
             <li key={idx}>
-              <ContentItem {...item} />
+              <ContentItem item={item} />
             </li>
           ))}
         </ol>

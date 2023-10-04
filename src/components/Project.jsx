@@ -23,7 +23,7 @@ export default function Project() {
           <ol>
             {projects.map((project, idx) => (
               <li key={idx}>
-                <ProjectItem {...project} />
+                <ProjectItem item={project} />
               </li>
             ))}
           </ol>
@@ -35,7 +35,7 @@ export default function Project() {
           <ol>
             {projects.map((project, idx) => (
               <li key={idx}>
-                <ProjectGridItem {...project} />
+                <ProjectGridItem item={project} />
               </li>
             ))}
           </ol>

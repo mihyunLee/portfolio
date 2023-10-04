@@ -3,8 +3,8 @@ import Markdown from "./common/Markdown";
 import { FaGithub, FaLink } from "react-icons/fa6";
 import { Content, Date, ItemWrapper, Link, Part } from "./common/ContentItem";
 
-export default function ProjectItem(props) {
-  const project = markdownToObject(props.data);
+export default function ProjectItem({ item }) {
+  const project = markdownToObject(item);
   const {
     title,
     intro,

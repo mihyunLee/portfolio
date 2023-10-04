@@ -19,14 +19,12 @@ export default function useData(dirname) {
   useEffect(() => {
     dispatch({ type: "REQUEST_FILE" });
 
-    dataController
-      .getFiles(dirname)
-      .then((file) =>
-        dispatch({
-          type: "LOADING",
-          file: file.length === 1 ? file[0].data : file,
-        })
-      );
+    dataController.getFiles(dirname).then((file) =>
+      dispatch({
+        type: "LOADING",
+        file: file.data.length === 1 ? file.data[0] : file.data.reverse(),
+      })
+    );
   }, [dirname]);
 
   return { file, isLoading };
