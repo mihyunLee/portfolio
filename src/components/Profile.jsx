@@ -4,16 +4,13 @@ import { FaEnvelope, FaGithub, FaBloggerB } from "react-icons/fa6";
 import Intro from "./Intro";
 
 export default function Profile() {
-  const { name, job, email, github, blog } = simpleInfo;
+  const { name, job, email, github, blog, image } = simpleInfo;
 
   return (
     <StyledSection id="intro">
       <Info>
         <Photo>
-          <img
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="프로필 이미지"
-          />
+          <img src={image} alt="프로필 이미지" />
         </Photo>
         <Name>{name}</Name>
         <Job>{job}</Job>
