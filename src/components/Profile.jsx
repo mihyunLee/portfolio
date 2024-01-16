@@ -28,6 +28,9 @@ export default function Profile() {
             {blog}
           </a>
         </Contact>
+        <Message>
+          *이력서의 파란 글씨에는 하이퍼링크가 적용되어 있습니다.
+        </Message>
       </Info>
       <IntroBox>
         <Intro />
@@ -69,6 +72,12 @@ const Info = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+`;
+
+const Message = styled.p`
+  margin-top: 16px;
+  color: gray;
+  font-size: 14px;
 `;
 
 const Name = styled.h2`
