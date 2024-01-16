@@ -32,6 +32,11 @@ const GlobalStyle = styled.createGlobalStyle`
   svg {
     vertical-align: middle;
   }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
 `;
 
 export default GlobalStyle;

@@ -23,7 +23,9 @@ export default function ProjectItem({ item }) {
       <h3>{title}</h3>
       <span>{team}</span>
       <Part>
-        <span>💡 Introduce</span>
+        <span>
+          <b>💡 Introduce</b>
+        </span>
         <p>{intro}</p>
       </Part>
       <Date>
@@ -32,22 +34,31 @@ export default function ProjectItem({ item }) {
         </span>
       </Date>
       <Part>
-        <span>🚩 Role</span>
+        <span>
+          <b>🚩 Role</b>
+        </span>
         <p>{role}</p>
       </Part>
       <Part>
-        <span>⚙️ Skills</span>
+        <span>
+          <b>⚙️ Skills</b>
+        </span>
         <p>{skills}</p>
       </Part>
-      <Content>
-        <ul>
-          {content.map((el, idx) => (
-            <li key={idx}>
-              <Markdown>{el}</Markdown>
-            </li>
-          ))}
-        </ul>
-      </Content>
+      <Part>
+        <span>
+          <b>✨ Contribute</b>
+        </span>
+        <Content>
+          <ul>
+            {content.map((el, idx) => (
+              <li key={idx}>
+                <Markdown>{el}</Markdown>
+              </li>
+            ))}
+          </ul>
+        </Content>
+      </Part>
       <Link>
         <a href={site} target="_blank" rel="noreferrer">
           <FaLink />
