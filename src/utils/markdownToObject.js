@@ -12,7 +12,7 @@ function markdownToObject(markdownData) {
       const value = parts[1].trim();
 
       result[key] = value;
-    } else if (item.indexOf("-") === 0) {
+    } else if (item.indexOf("-") === 0 || item.indexOf("**") === 0) {
       // '- item' -> result.content = [...etc, '- item']
       contentArr.push(item);
     }
