@@ -16,13 +16,11 @@ export default function ContentItem({ item }) {
       </Date>
       <Content>
         {content && (
-          <ul>
+          <>
             {content.map((el, idx) => (
-              <li key={idx}>
-                <Markdown>{el}</Markdown>
-              </li>
+              <Markdown key={idx}>{el}</Markdown>
             ))}
-          </ul>
+          </>
         )}
       </Content>
       <Link>
@@ -68,7 +66,13 @@ export const Part = styled.div`
 `;
 
 export const Content = styled(Part)`
-  padding-left: 16px;
+  p {
+    margin-bottom: 4px;
+  }
+
+  ul {
+    padding-left: 16px;
+  }
 `;
 
 export const Link = styled.div`

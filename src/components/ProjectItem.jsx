@@ -50,13 +50,9 @@ export default function ProjectItem({ item }) {
           <b>✨ Contribute</b>
         </span>
         <Content>
-          <ul>
-            {content.map((el, idx) => (
-              <li key={idx}>
-                <Markdown>{el}</Markdown>
-              </li>
-            ))}
-          </ul>
+          {content.map((el, idx) => (
+            <Markdown key={idx}>{el}</Markdown>
+          ))}
         </Content>
       </Part>
       <Link>
