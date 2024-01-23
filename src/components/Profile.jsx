@@ -19,11 +19,11 @@ export default function Profile() {
             <FaEnvelope />
             {email}
           </a>
-          <a href={github}>
+          <a href={github} target="_blank" rel="noreferrer noopener">
             <FaGithub />
             {github}
           </a>
-          <a href={blog}>
+          <a href={blog} target="_blank" rel="noreferrer noopener">
             <FaBloggerB />
             {blog}
           </a>
