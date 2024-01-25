@@ -1,10 +1,10 @@
 import { simpleInfo } from "../data/profile";
-import Layout from "./common/Layout";
+import SectionLayout from "./common/SectionLayout";
 import styled from "styled-components";
 
 export default function Skill() {
   return (
-    <Layout $headerIcon="📚">
+    <SectionLayout $headerIcon="📚">
       <h2>보유 기술</h2>
       <div className="content">
         <h3>스킬</h3>
@@ -14,7 +14,7 @@ export default function Skill() {
           ))}
         </SkillList>
       </div>
-    </Layout>
+    </SectionLayout>
   );
 }
 

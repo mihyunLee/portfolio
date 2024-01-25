@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export default function Layout({ children, $headerIcon }) {
-  return <LayoutSection $headerIcon={$headerIcon}>{children}</LayoutSection>;
+export default function SectionLayout({ children, $headerIcon }) {
+  return <Layout $headerIcon={$headerIcon}>{children}</Layout>;
 }
 
-const LayoutSection = styled.section`
+const Layout = styled.section`
   padding-top: 40px;
   padding-bottom: 60px;
   border-top: 3px solid var(--black);

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Main({ children }) {
+export default function MainLayout({ children }) {
   return <StyledMain id="main">{children}</StyledMain>;
 }
 

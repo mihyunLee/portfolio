@@ -1,6 +1,6 @@
 import Header from "./components/common/Header";
 import Profile from "./components/Profile";
-import Main from "./components/Main";
+import MainLayout from "./components/common/MainLayout";
 import Project from "./components/Project";
 import Skill from "./components/Skill";
 import Content from "./components/common/Content";
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <Main>
+      <MainLayout>
         <Profile />
         <Project />
         <Skill />
@@ -24,7 +24,7 @@ function App() {
           header="수료 및 자격증"
           headerIcon="📜"
         />
-      </Main>
+      </MainLayout>
     </>
   );
 }

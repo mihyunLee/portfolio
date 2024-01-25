@@ -1,6 +1,6 @@
 import useData from "../../hooks/useData";
 import ContentItem from "./ContentItem";
-import Layout from "./Layout";
+import SectionLayout from "./SectionLayout";
 import Spinner from "./Spinner";
 
 export default function Content({ folderName, header, headerIcon }) {
@@ -15,7 +15,7 @@ export default function Content({ folderName, header, headerIcon }) {
   }
 
   return (
-    <Layout $headerIcon={headerIcon}>
+    <SectionLayout $headerIcon={headerIcon}>
       <h2>{header}</h2>
       <div className="content">
         <ol>
@@ -26,6 +26,6 @@ export default function Content({ folderName, header, headerIcon }) {
           ))}
         </ol>
       </div>
-    </Layout>
+    </SectionLayout>
   );
 }
