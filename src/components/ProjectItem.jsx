@@ -1,6 +1,6 @@
 import markdownToObject from "../utils/markdownToObject";
 import Markdown from "./common/Markdown";
-import { FaGithub, FaLink } from "react-icons/fa6";
+import { FaGithub, FaLink, FaPenClip } from "react-icons/fa6";
 import { Content, Date, ItemWrapper, Link, Part } from "./common/ContentItem";
 
 export default function ProjectItem({ item }) {
@@ -15,6 +15,7 @@ export default function ProjectItem({ item }) {
     skills,
     site,
     github,
+    notion,
     content,
   } = project;
 
@@ -63,6 +64,10 @@ export default function ProjectItem({ item }) {
         <a href={github} target="_blank" rel="noreferrer">
           <FaGithub />
           {github}
+        </a>
+        <a href={notion} target="_blank" rel="noreferrer">
+          <FaPenClip />
+          {title} 회고록
         </a>
       </Link>
     </ItemWrapper>
