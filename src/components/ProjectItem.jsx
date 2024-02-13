@@ -2,6 +2,7 @@ import markdownToObject from "../utils/markdownToObject";
 import Markdown from "./common/Markdown";
 import { FaGithub, FaLink, FaPenClip } from "react-icons/fa6";
 import { Content, Date, ItemWrapper, Link, Part } from "./common/ContentItem";
+import styled from "styled-components";
 
 export default function ProjectItem({ item }) {
   const project = markdownToObject(item);
@@ -17,12 +18,28 @@ export default function ProjectItem({ item }) {
     github,
     notion,
     content,
+    image,
   } = project;
 
   return (
     <ItemWrapper>
+      <ProjectImage src={image} alt={`${title} 이미지`} />
       <h3>{title}</h3>
       <span>{team}</span>
+      <Link>
+        <a href={site} target="_blank" rel="noreferrer">
+          <FaLink />
+          {site}
+        </a>
+        <a href={github} target="_blank" rel="noreferrer">
+          <FaGithub />
+          {github}
+        </a>
+        <a href={notion} target="_blank" rel="noreferrer">
+          <FaPenClip />
+          {title} 회고록
+        </a>
+      </Link>
       <Part>
         <span>
           <b>💡 Introduce</b>
@@ -56,20 +73,12 @@ export default function ProjectItem({ item }) {
           ))}
         </Content>
       </Part>
-      <Link>
-        <a href={site} target="_blank" rel="noreferrer">
-          <FaLink />
-          {site}
-        </a>
-        <a href={github} target="_blank" rel="noreferrer">
-          <FaGithub />
-          {github}
-        </a>
-        <a href={notion} target="_blank" rel="noreferrer">
-          <FaPenClip />
-          {title} 회고록
-        </a>
-      </Link>
     </ItemWrapper>
   );
 }
+
+const ProjectImage = styled.img`
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+`;
